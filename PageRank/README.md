@@ -7,7 +7,7 @@ Use following command to run program:
 bash iterative.sh
 ````
 
-1. Upload Files to Hadoop. 
+1. Upload Files to HDFS. 
 2. Change Location of Files in iterative.sh
 3. Then run the program using above command.
 
