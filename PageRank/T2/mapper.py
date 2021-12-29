@@ -15,8 +15,8 @@ page_embeddings_file = open(sys.argv[2]) #json
 page_embeddings = json.load(page_embeddings_file)
 
 def similarity(p,q):
-    mag_p = 0#math.sqrt(sum(i**2 for i in p))
-    mag_q = 0#math.sqrt(sum(i**2 for i in q))
+    mag_p = 0
+    mag_q = 0
     product=0
     for i in range(0,len(p)):
         product += p[i]*q[i]
@@ -29,7 +29,7 @@ def similarity(p,q):
 for line in sys.stdin:
     line=line.strip()
     nodes = line.split(' ')
-    links = eval(nodes[1])#nodes[1][1:-1].split(',')
+    links = eval(nodes[1])
     print(nodes[0]+'\t'+"0")
     len1 = len(links)
     key = str(nodes[0])
